@@ -15,7 +15,7 @@ debug: all
 clean:
 	${RM} ${TARGETS}
 
-${TARGETS}:
+% : %.cpp 
 	${CPP} ${CPPFLAGS} -o $@ ${@:%=%.cpp} ${LDFLAGS}
 
 
