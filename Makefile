@@ -1,6 +1,6 @@
 CPP		= g++
 RM		= rm -f
-CPPFLAGS	= -Wall -O2 -std=c++11
+CPPFLAGS	= -Wall -O2 -std=c++11 -DLOCALTEST
 LDFLAGS		= -lm
 SOURCES		= $(wildcard *.cpp)
 TARGETS		= $(SOURCES:%.cpp=%)
